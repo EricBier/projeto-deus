@@ -5,3 +5,21 @@ img
     width: 100px;
 }
 
+
+/* Formatação de figuras com legendas*/
+
+figure.foto-legenda
+{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 1px black;
+}
+
+figure.foto-legenda img
+{
+    width: 80%;
+    height: 80%;
+}
+
+figure.foto-legenda figcaption
+
