@@ -6,10 +6,45 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Orações</title>
+    <style>
+      /* Formatação de imagens com legendas */
+
+figure.foto-legenda
+{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img 
+{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption 
+{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition:  opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption
+{
+    opacity: 1;
+}
+    </style>
     
 </head>
 <body>
-  <div>
+  <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img class="img-thumbnail" src="imagem/jesus-cristo.jpg" alt="jesus-cristo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +73,17 @@
           </ul>
         </div>
       </nav>
+      
       <figure class="foto-legenda">
-        <img src="imagem/imagem-famila.jpg" alt="foto-familia">
-        
-      </figure>
+        <img src="imagem/imagem2.png" alt="foto-familia">
+        <figcaption>
+            <h3>Projeto glass</h3>
+            <p>Uma nova maneira de ver o mundo.</p>
+        </figcaption>
+    </figure>
+
+
+    </div>
      
 
 
@@ -49,6 +91,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </div>
+  
 </body>
 </html>
